@@ -1,0 +1,637 @@
+{
+  "status": "Success",
+  "message": "✅ Home Data fetched successfully",
+  "data": {
+    "trending": {
+      "title": "Trending Now",
+      "subtitle": "",
+      "position": 1,
+      "source": "/get/trending",
+      "featured_text": "",
+      "data": [
+        {
+          "id": "62010690",
+          "name": "Chhaava",
+          "subtitle": "A.R. Rahman",
+          "type": "album",
+          "language": "hindi",
+          "play_count": 0,
+          "duration": 0,
+          "explicit": false,
+          "year": 0,
+          "url": "https://www.jiosaavn.com/album/chhaava/lmHOMjQdHlE_",
+          "header_desc": "",
+          "list_count": 0,
+          "list_type": "",
+          "image": [
+            {
+              "quality": "50x50",
+              "link": "https://c.saavncdn.com/509/Chhaava-Hindi-2025-20250213193448-50x50.jpg?bch=487425"
+            },
+            {
+              "quality": "150x150",
+              "link": "https://c.saavncdn.com/509/Chhaava-Hindi-2025-20250213193448-150x150.jpg?bch=487425"
+            },
+            {
+              "quality": "500x500",
+              "link": "https://c.saavncdn.com/509/Chhaava-Hindi-2025-20250213193448-500x500.jpg?bch=487425"
+            }
+          ],
+          "artist_map": {
+            "artists": [
+              {
+                "id": "456269",
+                "name": "A.R. Rahman",
+                "url": "https://www.jiosaavn.com/artist/a.r.-rahman-songs/HhFyPLvlKN0_",
+                "role": "",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/AR_Rahman_002_20210120084455_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/AR_Rahman_002_20210120084455_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/AR_Rahman_002_20210120084455_500x500.jpg"
+                  }
+                ]
+              }
+            ],
+            "featured_artists": [],
+            "primary_artists": []
+          },
+          "song_count": 7,
+          "songs": []
+        },
+        {
+          "id": "Z7lcJEpE",
+          "name": "Run It Up",
+          "subtitle": "Hanumankind - Run It Up",
+          "type": "song",
+          "url": "https://www.jiosaavn.com/song/run-it-up/Kl8HUj51R3Y",
+          "image": [
+            {
+              "quality": "50x50",
+              "link": "https://c.saavncdn.com/084/Run-It-Up-English-2025-20250307235032-50x50.jpg?bch=487425"
+            },
+            {
+              "quality": "150x150",
+              "link": "https://c.saavncdn.com/084/Run-It-Up-English-2025-20250307235032-150x150.jpg?bch=487425"
+            },
+            {
+              "quality": "500x500",
+              "link": "https://c.saavncdn.com/084/Run-It-Up-English-2025-20250307235032-500x500.jpg?bch=487425"
+            }
+          ],
+          "language": "english",
+          "year": 2025,
+          "header_desc": "",
+          "play_count": 1922422,
+          "explicit": true,
+          "list": "",
+          "list_type": "",
+          "list_count": 0,
+          "music": "Sooraj Cherukat, Sai Nikhil Kalmireddy",
+          "artist_map": {
+            "artists": [
+              {
+                "id": "6241383",
+                "name": "Hanumankind",
+                "url": "https://www.jiosaavn.com/artist/hanumankind-songs/zOcmxSPZh-E_",
+                "role": "Singer",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/Hanumankind_001_20250313025806_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/Hanumankind_001_20250313025806_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/Hanumankind_001_20250313025806_500x500.jpg"
+                  }
+                ]
+              },
+              {
+                "id": "10720770",
+                "name": "Sooraj Cherukat",
+                "url": "https://www.jiosaavn.com/artist/sooraj-cherukat-songs/shusi8zIoRA_",
+                "role": "",
+                "type": "artist",
+                "image": ""
+              },
+              {
+                "id": "21864100",
+                "name": "Sai Nikhil Kalmireddy",
+                "url": "https://www.jiosaavn.com/artist/sai-nikhil-kalmireddy-songs/2oHYMWfKjPs_",
+                "role": "",
+                "type": "artist",
+                "image": ""
+              }
+            ],
+            "featured_artists": [],
+            "primary_artists": [
+              {
+                "id": "6241383",
+                "name": "Hanumankind",
+                "url": "https://www.jiosaavn.com/artist/hanumankind-songs/zOcmxSPZh-E_",
+                "role": "Singer",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/Hanumankind_001_20250313025806_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/Hanumankind_001_20250313025806_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/Hanumankind_001_20250313025806_500x500.jpg"
+                  }
+                ]
+              }
+            ]
+          },
+          "album": "Run It Up",
+          "album_id": "62581995",
+          "album_url": "https://www.jiosaavn.com/album/run-it-up/cpqv-iwfY6Q_",
+          "label": "Capitol Records/Universal Music India",
+          "label_url": "/label/capitol-recordsuniversal-music-india-albums/uLkoIQuqCRs_",
+          "origin": "none",
+          "is_dolby_content": false,
+          "320kbps": true,
+          "download_url": [
+            {
+              "quality": "12kbps",
+              "link": "https://aac.saavncdn.com/084/dfb021719cfb922097856f5fb8ea385f_12.mp4"
+            },
+            {
+              "quality": "48kbps",
+              "link": "https://aac.saavncdn.com/084/dfb021719cfb922097856f5fb8ea385f_48.mp4"
+            },
+            {
+              "quality": "96kbps",
+              "link": "https://aac.saavncdn.com/084/dfb021719cfb922097856f5fb8ea385f_96.mp4"
+            },
+            {
+              "quality": "160kbps",
+              "link": "https://aac.saavncdn.com/084/dfb021719cfb922097856f5fb8ea385f_160.mp4"
+            },
+            {
+              "quality": "320kbps",
+              "link": "https://aac.saavncdn.com/084/dfb021719cfb922097856f5fb8ea385f_320.mp4"
+            }
+          ],
+          "duration": 173,
+          "rights": { "code": "0", "cacheable": "true" },
+          "has_lyrics": false,
+          "lyrics_snippet": "",
+          "starred": false,
+          "release_date": "2025-03-06",
+          "triller_available": false,
+          "copyright_text": "℗ 2025 SLDM Enterprises, under exclusive license to UMG Recordings, Inc.",
+          "vcode": "010912292983709",
+          "vlink": "https://jiotunepreview.jio.com/content/Converted/010912292936708.mp3"
+        },
+        {
+          "id": "fYDNI8TM",
+          "name": "Aavan Jaavan (From \"WAR 2\")",
+          "subtitle": "Pritam, Arijit Singh, Nikhita Gandhi, Amitabh Bhattacharya - Aavan Jaavan (From \"WAR 2\")",
+          "type": "song",
+          "url": "https://www.jiosaavn.com/song/aavan-jaavan-from-war-2/FjEvfz0IY34",
+          "image": [
+            {
+              "quality": "50x50",
+              "link": "https://c.saavncdn.com/028/Aavan-Jaavan-From-WAR-2-Hindi-2025-20250731054247-50x50.jpg?bch=487425"
+            },
+            {
+              "quality": "150x150",
+              "link": "https://c.saavncdn.com/028/Aavan-Jaavan-From-WAR-2-Hindi-2025-20250731054247-150x150.jpg?bch=487425"
+            },
+            {
+              "quality": "500x500",
+              "link": "https://c.saavncdn.com/028/Aavan-Jaavan-From-WAR-2-Hindi-2025-20250731054247-500x500.jpg?bch=487425"
+            }
+          ],
+          "language": "hindi",
+          "year": 2025,
+          "header_desc": "",
+          "play_count": 740135,
+          "explicit": false,
+          "list": "",
+          "list_type": "",
+          "list_count": 0,
+          "music": "Pritam",
+          "artist_map": {
+            "artists": [
+              {
+                "id": "456323",
+                "name": "Pritam",
+                "url": "https://www.jiosaavn.com/artist/pritam-songs/OaFg9HPZgq8_",
+                "role": "Singer",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/Pritam_Chakraborty-20170711073326_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/Pritam_Chakraborty-20170711073326_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/Pritam_Chakraborty-20170711073326_500x500.jpg"
+                  }
+                ]
+              },
+              {
+                "id": "457799",
+                "name": "Hrithik Roshan",
+                "url": "https://www.jiosaavn.com/artist/hrithik-roshan-songs/g-Z62I,nkeQ_",
+                "role": "Starring",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/Hrithik_Roshan_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/Hrithik_Roshan_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/Hrithik_Roshan_500x500.jpg"
+                  }
+                ]
+              },
+              {
+                "id": "458681",
+                "name": "Amitabh Bhattacharya",
+                "url": "https://www.jiosaavn.com/artist/amitabh-bhattacharya-songs/hsNRL6ZmJmo_",
+                "role": "",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/Amitabh_Bhattacharya_003_20241118063351_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/Amitabh_Bhattacharya_003_20241118063351_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/Amitabh_Bhattacharya_003_20241118063351_500x500.jpg"
+                  }
+                ]
+              },
+              {
+                "id": "459320",
+                "name": "Arijit Singh",
+                "url": "https://www.jiosaavn.com/artist/arijit-singh-songs/LlRWpHzy3Hk_",
+                "role": "",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/Arijit_Singh_004_20241118063717_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/Arijit_Singh_004_20241118063717_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/Arijit_Singh_004_20241118063717_500x500.jpg"
+                  }
+                ]
+              },
+              {
+                "id": "702466",
+                "name": "Kiara Advani",
+                "url": "https://www.jiosaavn.com/artist/kiara-advani-songs/pxV2A60cbkI_",
+                "role": "",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/Kiara_Advani_002_20230726172900_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/Kiara_Advani_002_20230726172900_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/Kiara_Advani_002_20230726172900_500x500.jpg"
+                  }
+                ]
+              },
+              {
+                "id": "745460",
+                "name": "Nikhita Gandhi",
+                "url": "https://www.jiosaavn.com/artist/nikhita-gandhi-songs/PP1RAOLWPAM_",
+                "role": "",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/Nikhita_Gandhi_007_20250807084712_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/Nikhita_Gandhi_007_20250807084712_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/Nikhita_Gandhi_007_20250807084712_500x500.jpg"
+                  }
+                ]
+              },
+              {
+                "id": "791554",
+                "name": "Jr. NTR",
+                "url": "https://www.jiosaavn.com/artist/jr.-ntr-songs/Tia567J8WCU_",
+                "role": "",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/Jr__NTR_004_20240625102720_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/Jr__NTR_004_20240625102720_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/Jr__NTR_004_20240625102720_500x500.jpg"
+                  }
+                ]
+              }
+            ],
+            "featured_artists": [],
+            "primary_artists": [
+              {
+                "id": "456323",
+                "name": "Pritam",
+                "url": "https://www.jiosaavn.com/artist/pritam-songs/OaFg9HPZgq8_",
+                "role": "Singer",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/Pritam_Chakraborty-20170711073326_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/Pritam_Chakraborty-20170711073326_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/Pritam_Chakraborty-20170711073326_500x500.jpg"
+                  }
+                ]
+              },
+              {
+                "id": "458681",
+                "name": "Amitabh Bhattacharya",
+                "url": "https://www.jiosaavn.com/artist/amitabh-bhattacharya-songs/hsNRL6ZmJmo_",
+                "role": "",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/Amitabh_Bhattacharya_003_20241118063351_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/Amitabh_Bhattacharya_003_20241118063351_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/Amitabh_Bhattacharya_003_20241118063351_500x500.jpg"
+                  }
+                ]
+              },
+              {
+                "id": "459320",
+                "name": "Arijit Singh",
+                "url": "https://www.jiosaavn.com/artist/arijit-singh-songs/LlRWpHzy3Hk_",
+                "role": "",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/Arijit_Singh_004_20241118063717_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/Arijit_Singh_004_20241118063717_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/Arijit_Singh_004_20241118063717_500x500.jpg"
+                  }
+                ]
+              },
+              {
+                "id": "745460",
+                "name": "Nikhita Gandhi",
+                "url": "https://www.jiosaavn.com/artist/nikhita-gandhi-songs/PP1RAOLWPAM_",
+                "role": "",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/Nikhita_Gandhi_007_20250807084712_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/Nikhita_Gandhi_007_20250807084712_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/Nikhita_Gandhi_007_20250807084712_500x500.jpg"
+                  }
+                ]
+              }
+            ]
+          },
+          "album": "Aavan Jaavan (From \"WAR 2\")",
+          "album_id": "66780039",
+          "album_url": "https://www.jiosaavn.com/album/aavan-jaavan-from-war-2/fFTvip5oIMY_",
+          "label": "YRF Music",
+          "label_url": "/label/yrf-music-albums/XqFShgT4cps_",
+          "origin": "none",
+          "is_dolby_content": false,
+          "320kbps": true,
+          "download_url": [
+            {
+              "quality": "12kbps",
+              "link": "https://aac.saavncdn.com/028/ff2cf24758132cc3350eb24405b9b10d_12.mp4"
+            },
+            {
+              "quality": "48kbps",
+              "link": "https://aac.saavncdn.com/028/ff2cf24758132cc3350eb24405b9b10d_48.mp4"
+            },
+            {
+              "quality": "96kbps",
+              "link": "https://aac.saavncdn.com/028/ff2cf24758132cc3350eb24405b9b10d_96.mp4"
+            },
+            {
+              "quality": "160kbps",
+              "link": "https://aac.saavncdn.com/028/ff2cf24758132cc3350eb24405b9b10d_160.mp4"
+            },
+            {
+              "quality": "320kbps",
+              "link": "https://aac.saavncdn.com/028/ff2cf24758132cc3350eb24405b9b10d_320.mp4"
+            }
+          ],
+          "duration": 225,
+          "rights": {
+            "code": "1",
+            "cacheable": "false",
+            "delete_cached_object": "true",
+            "reason": "Unavailable"
+          },
+          "has_lyrics": false,
+          "lyrics_snippet": "",
+          "starred": false,
+          "release_date": "2025-07-31",
+          "triller_available": false,
+          "copyright_text": "(C)2025 YRF Music",
+          "vcode": "010912023301410",
+          "vlink": "https://jiotunepreview.jio.com/content/Converted/010912023253956.mp3"
+        },
+        {
+          "id": "64196867",
+          "name": "Lose My Mind (feat. Doja Cat) [From F1® The Movie]",
+          "subtitle": "Don Toliver",
+          "type": "album",
+          "language": "english",
+          "play_count": 0,
+          "duration": 0,
+          "explicit": false,
+          "year": 0,
+          "url": "https://www.jiosaavn.com/album/lose-my-mind-feat.-doja-cat-from-f1%c2%ae-the-movie/3Zq0DupujkU_",
+          "header_desc": "",
+          "list_count": 0,
+          "list_type": "",
+          "image": [
+            {
+              "quality": "50x50",
+              "link": "https://c.saavncdn.com/421/Lose-My-Mind-feat-Doja-Cat-From-F1-The-Movie-English-2025-20250430141441-50x50.jpg?bch=487425"
+            },
+            {
+              "quality": "150x150",
+              "link": "https://c.saavncdn.com/421/Lose-My-Mind-feat-Doja-Cat-From-F1-The-Movie-English-2025-20250430141441-150x150.jpg?bch=487425"
+            },
+            {
+              "quality": "500x500",
+              "link": "https://c.saavncdn.com/421/Lose-My-Mind-feat-Doja-Cat-From-F1-The-Movie-English-2025-20250430141441-500x500.jpg?bch=487425"
+            }
+          ],
+          "artist_map": {
+            "artists": [
+              {
+                "id": "3377268",
+                "name": "Don Toliver",
+                "url": "https://www.jiosaavn.com/artist/don-toliver-songs/XxNL-tlScyY_",
+                "role": "",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/Don_Toliver_20200117142559_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/Don_Toliver_20200117142559_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/Don_Toliver_20200117142559_500x500.jpg"
+                  }
+                ]
+              }
+            ],
+            "featured_artists": [],
+            "primary_artists": []
+          },
+          "song_count": 1,
+          "songs": []
+        },
+        {
+          "id": "66130114",
+          "name": "Mahavatar Narsimha (Hindi) (Original Motion Picture Soundtrack)",
+          "subtitle": "Sam C.S.",
+          "type": "album",
+          "language": "hindi",
+          "play_count": 0,
+          "duration": 0,
+          "explicit": false,
+          "year": 0,
+          "url": "https://www.jiosaavn.com/album/mahavatar-narsimha-hindi-original-motion-picture-soundtrack/RID0XMEt,Ts_",
+          "header_desc": "",
+          "list_count": 0,
+          "list_type": "",
+          "image": [
+            {
+              "quality": "50x50",
+              "link": "https://c.saavncdn.com/304/Mahavatar-Narsimha-Hindi-Original-Motion-Picture-Soundtrack-Hindi-2025-20250708120944-50x50.jpg?bch=487425"
+            },
+            {
+              "quality": "150x150",
+              "link": "https://c.saavncdn.com/304/Mahavatar-Narsimha-Hindi-Original-Motion-Picture-Soundtrack-Hindi-2025-20250708120944-150x150.jpg?bch=487425"
+            },
+            {
+              "quality": "500x500",
+              "link": "https://c.saavncdn.com/304/Mahavatar-Narsimha-Hindi-Original-Motion-Picture-Soundtrack-Hindi-2025-20250708120944-500x500.jpg?bch=487425"
+            }
+          ],
+          "artist_map": {
+            "artists": [
+              {
+                "id": "594484",
+                "name": "Sam C.S.",
+                "url": "https://www.jiosaavn.com/artist/sam-c.s.-songs/lHgdHEDZEvA_",
+                "role": "",
+                "type": "artist",
+                "image": [
+                  {
+                    "quality": "50x50",
+                    "link": "https://c.saavncdn.com/artists/Sam_CS_20180425064115_50x50.jpg"
+                  },
+                  {
+                    "quality": "150x150",
+                    "link": "https://c.saavncdn.com/artists/Sam_CS_20180425064115_150x150.jpg"
+                  },
+                  {
+                    "quality": "500x500",
+                    "link": "https://c.saavncdn.com/artists/Sam_CS_20180425064115_500x500.jpg"
+                  }
+                ]
+              }
+            ],
+            "featured_artists": [],
+            "primary_artists": []
+          },
+          "song_count": 7,
+          "songs": []
+        }
+      ]
+    }
+  }
+}
