@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:gaana/theme/dark_mode.dart';
 import 'package:gaana/theme/light_mode.dart';
+import 'package:flutter/scheduler.dart';
 
 class ThemeProvider extends ChangeNotifier {
-  ThemeData _themeData = lightMode;
+  late ThemeData _themeData;
+  final currentBrightness = SchedulerBinding.instance.platformDispatcher.platformBrightness;
+
+  ThemeProvider() {
+    _themeData = (currentBrightness == Brightness.dark) ? darkMode : lightMode;
+  }
 
   // Getter for current theme
   ThemeData get themeData => _themeData;

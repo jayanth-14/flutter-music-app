@@ -28,7 +28,6 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final audioProvider = Provider.of<AudioPlayerProvider>(context);
 
     return Scaffold(
       appBar: AppBar(),
@@ -119,23 +118,12 @@ class Home extends StatelessWidget {
                                 return GestureDetector(
                                   onTap: () {
                                     if (type == "song") {
-                                      audioProvider.play(url, title, imageUrl, artist);
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (_) => AudioPlayerScreen(
-                                            url: url,
-                                            title: title,
-                                            imageUrl: imageUrl,
-                                            artist: artist,
-                                          ),
-                                        ),
-                                      );
+                                     
                                     } else {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (_) => Album(albumId: id, type: type),
+                                          builder: (_) => AlbumScreen(albumId: id, type: type),
                                         ),
                                       );
                                     }
@@ -186,44 +174,7 @@ class Home extends StatelessWidget {
           ),
 
           // Mini Player
-          if (audioProvider.currentUrl != null)
-            Container(
-              color: Theme.of(context).colorScheme.surface,
-              child: ListTile(
-                leading: audioProvider.currentImage != null
-                    ? Image.network(audioProvider.currentImage!,
-                        width: 50, height: 50, fit: BoxFit.cover)
-                    : const Icon(Icons.music_note),
-                title: Text(audioProvider.currentTitle ?? ''),
-                subtitle: Text(audioProvider.currentArtist ?? ''),
-                trailing: IconButton(
-                  icon: Icon(audioProvider.player.playing
-                      ? Icons.pause
-                      : Icons.play_arrow),
-                  onPressed: () {
-                    if (audioProvider.player.playing) {
-                      audioProvider.pause();
-                    } else {
-                      audioProvider.resume();
-                    }
-                  },
-                ),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => AudioPlayerScreen(
-                        url: audioProvider.currentUrl ?? "",
-                        title: audioProvider.currentTitle ?? "",
-                        imageUrl: audioProvider.currentImage ?? "",
-                        artist: audioProvider.currentArtist ?? "",
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ),
-        ],
+         ],
       ),
     );
   }

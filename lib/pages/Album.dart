@@ -1,116 +1,148 @@
+import 'dart:developer' as d;
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
+import 'package:gaana/api/albumApi.dart';
+import 'package:audio_service/audio_service.dart';
+import 'package:get_it/get_it.dart';
+import 'package:gaana/pages/AudioPlayer.dart';
 
-class Album extends StatefulWidget {
-  const Album({super.key, required this.albumId, required this.type});
+class AlbumScreen extends StatefulWidget {
+  const AlbumScreen({super.key, required this.albumId, required this.type});
 
   final String albumId;
   final String type;
 
   @override
-  State<Album> createState() => _AlbumState();
+  State<AlbumScreen> createState() => _AlbumScreenState();
 }
 
-class _AlbumState extends State<Album> {
-  List<Map<String, dynamic>> albumImage = [];
-  List<Map<String, dynamic>> songs = [];
-  String albumName = "";
-  String artist = "";
-  bool isLoading = true;
-  String? errorMessage;
+class _AlbumScreenState extends State<AlbumScreen> {
+  late Future<ContentData> _contentDataFuture;
+  final AudioHandler _audioHandler = GetIt.instance<AudioHandler>();
 
   @override
   void initState() {
     super.initState();
-    fetchAlbum();
-  }
-
-  Future<void> fetchAlbum() async {
-    try {
-      final response = await http.get(
-        Uri.parse(
-          "https://rhythm-api.vercel.app/${widget.type}?id=${widget.albumId}",
-        ),
-      );
-
-      if (response.statusCode == 200) {
-        final jsonData = jsonDecode(response.body);
-        if (jsonData != null && jsonData['data'] != null) {
-          setState(() {
-            albumImage = jsonData['data']['image'] ?? [];
-            artist = jsonData['data']['artist'] ?? 'Unknown Artist';
-            albumImage =
-                (jsonData['data']['image'] as List<dynamic>?)
-                    ?.map((e) => e as Map<String, dynamic>)
-                    .toList() ??
-                [];
-
-            songs =
-                (jsonData['data']['songs'] as List<dynamic>?)
-                    ?.map((e) => e as Map<String, dynamic>)
-                    .toList() ??
-                [];
-
-            isLoading = false;
-          });
-        } else {
-          throw Exception("Invalid response format");
-        }
-      } else {
-        throw Exception("Failed to load album: ${response.statusCode}");
-      }
-    } catch (e) {
-      setState(() {
-        errorMessage = e.toString();
-        isLoading = false;
-      });
-      // print(songs);
-    }
+    d.log(
+      'Fetching content for type: ${widget.type} and id: ${widget.albumId}',
+    );
+    _contentDataFuture = fetchContent(id: widget.albumId, type: widget.type);
   }
 
   @override
   Widget build(BuildContext context) {
-    if (isLoading) {
-      return const Scaffold(body: Center(child: CircularProgressIndicator()));
-    }
-
-    if (errorMessage != null) {
-      return Scaffold(
-        appBar: AppBar(title: const Text("Album")),
-        body: Center(
-          child: Text("Error: $errorMessage \n with id ${widget.albumId}"),
-        ),
-      );
-    }
-
     return Scaffold(
-      appBar: AppBar(title: Text(albumName)),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          const SizedBox(height: 20),
-          albumImage.isNotEmpty
-              ? Image.network(
-                  albumImage.last["link"] ?? "",
-                  height: 200,
-                  width: 200,
-                  fit: BoxFit.cover,
-                )
-              : Container(
-                  height: 200,
-                  width: 200,
-                  color: Colors.grey[300],
-                  child: const Icon(Icons.music_note, size: 50),
+      appBar: AppBar(),
+      extendBodyBehindAppBar: true,
+      body: FutureBuilder<ContentData>(
+        future: _contentDataFuture,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          } else if (snapshot.hasError) {
+            return Center(
+              child: Text(
+                'Error: ${snapshot.error}',
+                style: const TextStyle(color: Colors.red),
+              ),
+            );
+          } else if (!snapshot.hasData) {
+            return const Center(child: Text('No data found.'));
+          }
+
+          final content = snapshot.data!;
+          final songs = content.songs;
+
+          return CustomScrollView(
+            slivers: [
+              SliverAppBar(
+                expandedHeight: 300,
+                automaticallyImplyLeading: false,
+                pinned: true,
+                flexibleSpace: FlexibleSpaceBar(
+                  background: content.imageLink.isNotEmpty
+                      ? Image.network(content.imageLink, fit: BoxFit.cover)
+                      : Container(color: Colors.grey),
                 ),
-          const SizedBox(height: 20),
-          Text(
-            albumName,
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-          ),
-          const SizedBox(height: 8),
-          Text(artist, style: const TextStyle(fontSize: 18)),
-        ],
+              ),
+              SliverList(
+                delegate: SliverChildListDelegate([
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          content.name,
+                          style: const TextStyle(
+                            fontSize: 28,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          content.artist,
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.grey[600],
+                          ),
+                        ),
+                        const SizedBox(height: 24),
+                        const Text(
+                          'Songs',
+                          style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 16),
+                      ],
+                    ),
+                  ),
+                  ...songs.asMap().entries.map((entry) {
+                    final index = entry.key;
+                    final song = entry.value;
+
+                    return ListTile(
+                      leading: Image.network(
+                        song['image'].last['link'],
+                        width: 50,
+                        height: 50,
+                        fit: BoxFit.cover,
+                        errorBuilder: (context, _, __) =>
+                            const Icon(Icons.music_note, size: 50),
+                      ),
+                      title: Text(song['name'] ?? 'Unknown Song'),
+                      subtitle: Text(
+                        (song['artist_map']['primary_artists'] as List)
+                                .isNotEmpty
+                            ? song['artist_map']['primary_artists'][0]['name']
+                            : 'Various Artists',
+                      ),
+                      onTap: () async {
+                        // Always call addTracks with playlistId (handler will decide whether to reload)
+                        await (_audioHandler as dynamic).addTracks(
+                          songs,
+                          playlistId: widget.albumId,
+                        );
+
+                        // Jump to the tapped index
+                        await _audioHandler.skipToQueueItem(index);
+                        await _audioHandler.play();
+
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => AudioPlayerScreen(index: index),
+                          ),
+                        );
+                      },
+                    );
+                  }),
+                ]),
+              ),
+            ],
+          );
+        },
       ),
     );
   }
